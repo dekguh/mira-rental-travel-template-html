@@ -1,0 +1,9 @@
+.bg-color-transparent-secondary {
+    @extend %background-color-transparent-secondary;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-image {
+    @extend %bg-image;
+}

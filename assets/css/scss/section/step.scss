@@ -1,0 +1,36 @@
+.block-step {
+    .block-step-header {
+        margin-bottom: 20px;
+
+        .block-step-icon {
+            margin: 0 auto;
+            position: relative;
+            height: 60px;
+            width: 60px;
+            @extend %background-color-primary;
+            border-radius: 100%;
+            transition: .8s;
+
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $color-white;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .block-step-body {
+        text-align: center;
+    }
+
+    .block-step-title {
+        margin-bottom: 15px;
+    }
+
+    .block-step-description {
+        margin-bottom: 0;
+    }
+}

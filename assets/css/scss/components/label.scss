@@ -1,0 +1,13 @@
+.label-custom {
+    padding: 8px 12px;
+    color: $color-white;
+    text-decoration: none;
+
+    &.label-primary {
+        @extend %background-color-primary;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

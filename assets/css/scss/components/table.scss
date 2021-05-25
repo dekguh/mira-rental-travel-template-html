@@ -1,0 +1,12 @@
+.table-custom {
+    thead {
+        @extend %background-color-primary;
+
+        tr {
+            th {
+                border: none;
+                color: $color-white;
+            }
+        }
+    }
+}

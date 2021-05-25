@@ -1,0 +1,183 @@
+.block-package {
+    position: relative;
+    height: 220px;
+    width: 100%;
+
+    .block-package-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px;
+    }
+
+    .block-package-body {
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .block-package-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+
+            a {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .list-horizontal {
+            margin-bottom: 8px;
+
+            .icon {
+                color: $color-white;
+            }
+
+            .text {
+                color: white;
+            }
+        }
+
+        .block-package-price {
+            color: $color-white;
+        }
+    }
+}
+
+.single-package-content {
+    .single-package-header {
+        margin-bottom: 30px;
+    }
+
+    .single-package-image {
+        position: relative;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .single-package-label {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 8px;
+    }
+
+    .single-package-title {
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .single-package-detail {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .left {
+            flex: 1 1 50%;
+        }
+
+        .right {
+            flex: 1 1 50%;
+        }
+    }
+
+    .list-package-detail {
+        @extend %reset-list-style;
+
+        .item {
+            padding: 8px 0;
+            border-bottom: 1px solid $color-gray-primary;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            .unit {
+                margin-right: 8px;
+                color: $color-black-primary;
+            }
+        }
+    }
+
+    .single-package-description {
+        .single-title {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .single-package-benefit {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .single-package-include {
+            flex: 1 1 50%;
+        }
+
+        .single-package-noinclude {
+            flex: 1 1 50%;
+        }
+
+        .title {
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .list-benefit {
+            @extend %reset-list-style;
+
+            .item {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    @extend %font-color-primary;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    .single-other-package {
+        .single-other-title {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .single-package-content {
+        .single-package-detail {
+            flex-flow: column nowrap;
+
+            .left {
+                flex: 1 1 100%;
+            }
+
+            .right {
+                flex: 1 1 100%;
+            }
+        }
+
+        .single-package-benefit {
+            flex-flow: column nowrap;
+
+            .single-package-include {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+
+            .single-package-noinclude {
+                flex: 1 1 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.block-counter {
+    position: relative;
+    @extend %background-color-primary;
+    color: $color-white;
+    padding: 15px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        bottom: -20px;
+        left: 20px;
+        right: 20px;
+        height: 100%;
+        @extend %background-color-secondary;
+    }
+
+    .block-counter-item {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .counter-number-wrap {
+        .counter-number {
+            margin-bottom: 0;
+            display: inline-block;
+            color: $color-white;
+        }
+    }
+}

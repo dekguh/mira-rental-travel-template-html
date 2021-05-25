@@ -1,0 +1,44 @@
+.title-section {
+    .subtitle {
+        @extend %font-color-primary;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .title {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    &.title-section-center {
+        text-align: center;
+        margin: 0 auto;
+        width: 40%;
+    }
+}
+
+.divider-small {
+    height: 4px;
+    width: 30px;
+    @extend %background-color-primary;
+}
+
+@media (max-width: 991.98px) {
+    .title-section {
+        &.title-section-center {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title-section {
+        .title {
+            //font-size: $size-h4;
+        }
+
+        &.title-section-center {
+            width: 100%;
+        }
+    }
+}

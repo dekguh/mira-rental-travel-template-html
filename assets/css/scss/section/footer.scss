@@ -1,0 +1,125 @@
+.footer-wrapper {
+    .footer-map {
+        width: 100%;
+        height: 200px;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    .footer-inner {
+        @extend %background-color-secondary;
+    }
+
+    .footer-content {
+        padding: 70px 0 40px 0;
+    }
+
+    .footer-content-item {
+        .footer-content-header {
+            margin-bottom: 20px;
+
+            .footer-title {
+                margin-bottom: 0;
+                color: $color-white;
+            }
+        }
+
+        .footer-description {
+            color: $color-white;
+            margin-bottom: 15px;
+
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .footer-partner {
+            .partner-logo {
+                width: 120px;
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding: 15px;
+        border-top: 1px solid $color-white;
+
+        .copyright {
+            color: $color-white;
+        }
+    }
+}
+
+.block-contact {
+    position: relative;
+    z-index: 9;
+    @extend %background-color-primary;
+    padding: 30px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: -60px 80px 0 80px;
+
+    .block-contact-item {
+        flex: 1 1 33.33%;
+        padding: 15px;
+    }
+
+    .block-contact-content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block-contact-icon {
+        color: transparent;
+        stroke-width: 16px;
+        stroke: $color-white;
+        font-size: 40px;
+        margin-right: 15px;
+    }
+
+    .block-contact-title {
+        color: $color-white;
+        margin-bottom: 4px;
+        font-weight: 400;
+    }
+
+    .block-contact-description {
+        color: $color-white;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .block-contact {
+        flex-flow: column nowrap;
+        margin: -60px 0 0 0;
+
+        .block-contact-item {
+            flex: 1 1 100%;
+            padding: 15px;
+        }
+
+        .block-contact-content {
+            flex-flow: column nowrap;
+            align-items: unset;
+            justify-content: unset;
+        }
+
+        .block-contact-icon {
+            flex: 1 1 auto;
+            margin-right: 0;
+            margin-bottom: 4px;
+        }
+
+        .block-contact-detail {
+            flex: 1 1 auto;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.block-gallery {
+    height: 350px;
+    position: relative;
+
+    .gallery-number {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 60px;
+        font-weight: 600;
+        color: rgba($color: $color-white, $alpha: .45);
+    }
+
+    .gallery-view {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.single-gallery-content {
+    .single-gallery-image {
+        img {
+            width: 100%;
+        }
+    }
+}

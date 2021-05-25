@@ -1,0 +1,49 @@
+.header-wrapper {
+    .header-content {
+        padding: 80px 0;
+        width: 60%;
+    }
+
+    .header-content-title {
+        .title {
+            margin-bottom: 0;
+            color: $color-white;
+            font-weight: 600;
+        }
+    }
+}
+
+.page-header-wrapper {
+    .page-header-content {
+        padding: 50px 0;
+    }
+
+    .page-header-title {
+        .title {
+            color: $color-white;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-wrapper {
+        .header-content {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header-wrapper {
+        .header-content {
+            width: 100%;
+        }
+
+        .header-content-title {
+            .title {
+                font-size: $size-h4;
+            }
+        }
+    }
+}

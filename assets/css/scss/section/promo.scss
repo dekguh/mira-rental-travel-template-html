@@ -1,0 +1,197 @@
+.promo-inner {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.promo-image-wrap {
+    flex: 1 1 50%;
+    align-items: stretch;
+    padding-bottom: 50px;
+
+    .promo-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bg-color-transparent-secondary {
+        position: relative;
+    }
+
+    .promo-count-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .promo-count-title {
+            color: $color-white;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.promo-content-wrap {
+    flex: 1 1 50%;
+    background-color: $color-gray-primary;
+    padding: 120px 80px;
+    margin-left: -30px;
+    margin-top: 50px;
+    z-index: 9;
+
+    .promo-title {
+        a {
+            color: $color-black-primary;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+                @extend %font-color-primary;
+            }
+        }
+    }
+}
+
+.block-promo-single {
+    .bg-color-transparent-secondary {
+        padding: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .block-promo-single-title {
+        flex: 0 1 70%;
+        .title {
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $color-white;
+
+            &:hover {
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .block-promo-single-button {
+        flex: 1 1 30%;
+        text-align: center;
+    }
+}
+
+.block-archive-promo {
+    .archive-promo-header {
+        margin-bottom: 20px;
+
+        .bg-color-transparent-secondary {
+            padding: 20px;
+            position: relative;
+            height: 200px;
+        }
+
+        .archive-promo-count {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .promo-count-title {
+            margin-bottom: 4px;
+            color: $color-white;
+            font-weight: 600;
+        }
+    }
+
+    .archive-promo-body {
+        .archive-promo-title {
+            margin-bottom: 4px;
+            font-weight: 600;
+
+            a {
+                color: $color-black-primary;
+
+                &:hover {
+                    @extend %font-color-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .archive-promo-description {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .promo-inner {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .promo-image-wrap {
+        flex: 1 1 100%;
+        align-items: center;
+        height: 300px;
+        padding-bottom: 0;
+
+        .promo-count-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .promo-count-title {
+                color: $color-white;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .promo-content-wrap {
+        flex: 1 1 100%;
+        padding: 120px 80px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .promo-content-wrap {
+        flex: 1 1 100%;
+        padding: 80px 15px;
+
+        .promo-title {
+            font-size: $size-h4;
+        }
+    }
+
+    .block-promo-single {
+        .bg-color-transparent-secondary {
+            flex-flow: column nowrap;
+            align-items: unset;
+        }
+
+        .block-promo-single-title {
+            flex: 0 1 100%;
+            text-align: center;
+            margin-bottom: 15px;
+
+            .title {
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+
+        .block-promo-single-button {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+}

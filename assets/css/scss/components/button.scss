@@ -1,0 +1,170 @@
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: .6s;
+
+    &.border-radius-30 {
+        border-radius: 30px;
+    }
+
+    .icon {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    &.button-primary {
+        color: $color-white;
+        @extend %background-color-primary;
+
+        &:hover {
+            @extend %background-color-secondary;
+            text-decoration: none;
+        }
+    }
+
+    &.button-outline-primary {
+        @extend %font-color-primary;
+        @extend %border-color-primary;
+
+        &:hover {
+            @extend %font-color-secondary;
+            @extend %border-color-secondary;
+            text-decoration: none;
+        }
+    }
+
+    &.button-outline-white {
+        background-color: transparent;
+        border-color: $color-white;
+        color: $color-white;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $color-white;
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    &.button-whatsapp {
+        color: $color-white;
+        background-color: $color-whatsapp;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-whatsapp;
+        }
+    }
+
+    &.button-facebook {
+        color: $color-white;
+        background-color: $color-facebook;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-facebook;
+        }
+    }
+
+    &.button-twitter {
+        color: $color-white;
+        background-color: $color-twitter;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-twitter;
+        }
+    }
+
+    &.button-instagram {
+        color: $color-white;
+        background-color: $color-instagram;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-instagram;
+        }
+    }
+
+    &.button-linkedin {
+        color: $color-white;
+        background-color: $color-linkedin;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-linkedin;
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        margin-top: 30px;
+
+        button {
+            &.owl-next {
+                margin: 0 0 0 8px !important;
+                background: transparent;
+                border-width: 1px;
+                border-style: solid;
+                @extend %border-color-primary;
+                border-radius: 0;
+                padding: 9px 15px !important;
+                @extend %font-color-primary;
+
+                &:hover {
+                    @extend %background-color-primary;
+                }
+            }
+
+            &.owl-prev {
+                margin: 0 8px 0 0 !important;
+                background: transparent;
+                border-width: 1px;
+                border-style: solid;
+                @extend %border-color-primary;
+                border-radius: 0;
+                padding: 9px 15px !important;
+                @extend %font-color-primary;
+
+                &:hover {
+                    @extend %background-color-primary;
+                }
+            }
+        }
+    }
+}
+
+.whatsapp-popup {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+
+    a {
+        display: block;
+        position: relative;
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        background-color: $color-whatsapp;
+        color: $color-white;
+
+        .icon {
+            font-size: 35px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}

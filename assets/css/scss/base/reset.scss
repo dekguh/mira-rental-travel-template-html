@@ -1,0 +1,78 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-roboto;
+    color: $color-body;
+}
+
+%setting-heading {
+    font-family: $font-poppins;
+    color: $color-heading;
+    line-height: $line-height-heading;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    @extend %setting-heading;
+    font-size: $size-h1;
+}
+
+h2 {
+    @extend %setting-heading;
+    font-size: $size-h2;
+}
+
+h3 {
+    @extend %setting-heading;
+    font-size: $size-h3;
+}
+
+h4 {
+    @extend %setting-heading;
+    font-size: $size-h4;
+}
+
+h5 {
+    @extend %setting-heading;
+    font-size: $size-h5;
+}
+
+h6 {
+    @extend %setting-heading;
+    font-size: $size-h6;
+}
+
+p {
+    line-height: $line-height-body;
+    margin-bottom: 15px;
+}
+
+a {
+    @extend %font-color-primary;
+    transition: .6s;
+
+    &:hover {
+        @extend %font-color-secondary;
+    }
+}
+
+button {
+    transition: .6s;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+input {
+    transition: .6s;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}

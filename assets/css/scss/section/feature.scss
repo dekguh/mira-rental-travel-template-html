@@ -1,0 +1,17 @@
+.feature-content {
+    padding: 70px 0;
+}
+
+.feature-image {
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .feature-content {
+        padding: 0 0 30px 0;
+    }
+
+    .feature-image {
+        height: 350px;
+    }
+}

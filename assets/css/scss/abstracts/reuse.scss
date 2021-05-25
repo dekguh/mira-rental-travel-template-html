@@ -1,0 +1,77 @@
+// font color primary
+%font-color-primary {
+    color: $color-blue-primary;
+}
+
+// font color secondary
+%font-color-secondary {
+    color: $color-blue-secondary;
+}
+
+// background color primary
+%background-color-primary {
+    background-color: $color-blue-primary;
+}
+
+// background color secondary
+%background-color-secondary {
+    background-color: $color-blue-secondary;
+}
+
+// background transparent color secondary
+%background-color-transparent-secondary {
+    background-color: rgba($color: $color-blue-secondary, $alpha: .75);
+}
+
+// border color primary
+%border-color-primary {
+    border-color: $color-blue-primary;
+}
+
+// border color secondary
+%border-color-secondary {
+    border-color: $color-blue-secondary;
+}
+
+// border right color primary
+%border-right-color-primary {
+    border-right-color: $color-blue-primary;
+}
+
+// border left color primary
+%border-left-color-primary {
+    border-left-color: $color-blue-primary;
+}
+
+// border top color primary
+%border-top-color-primary {
+    border-top-color: $color-blue-primary;
+}
+
+// border bottom color primary
+%border-bottom-color-primary {
+    border-bottom-color: $color-blue-primary;
+}
+
+// border bottom color secondary
+%border-bottom-color-secondary {
+    border-bottom-color: $color-blue-secondary;
+}
+
+// background image setting
+%bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991.98px) {
+    // font color primary
+    %font-color-primary-991 {
+        color: $color-blue-primary;
+    }
+    // background color primary
+    %background-color-primary-991 {
+        background-color: $color-blue-primary;
+    }
+}
